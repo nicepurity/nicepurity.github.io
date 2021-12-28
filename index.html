@@ -170,7 +170,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         $('#submit').click(function() {
             var check_list = document.querySelectorAll('input[type="checkbox"]:checked');
             var check_total = check_list.length;
-            $('#score').html("score: " + check_total + "/100");
+            $('#score').html("score: " + (100 - check_total) + "/100");
             $("#show").show();
             $("#hide").hide();
         });
